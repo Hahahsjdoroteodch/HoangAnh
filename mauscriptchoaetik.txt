@@ -1,4 +1,4 @@
--- ✅ CHUẨN CHO NGƯỜI MỚI | TÉO HUB 🍎
+--✅MẪU CHUẨN CHO NGƯỜI MỚI | TÉO HUB 🍎
 -- Giữ nguyên giao diện thật, chỉ thêm hướng dẫn 👈 ngay bên cạnh dòng cần sửa
 
 repeat task.wait() until game:IsLoaded()
@@ -17,7 +17,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id= 83387232581848"  -- 👈 đổi ID ảnh nút mở menu tại đây (ảnh roblox)
+ImageButton.Image = "http://www.roblox.com/asset/?id= 105399105212664"  -- 👈 đổi ID ảnh nút mở menu tại đây (ảnh roblox)
 
 UICorner.CornerRadius = UDim.new(1, 10)
 UICorner.Parent = ImageButton
@@ -32,8 +32,8 @@ repeat wait() until game:IsLoaded()
 
 -- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
-	Title = "Hoàng Anh v1 =}",         -- 👈 đổi thành tên script của bạn
-	SubTitle = "quavipluon",              -- 👈 đổi mô tả phụ
+	Title = "Hoàng anh lỏ =}",         -- 👈 đổi thành tên script của bạn
+	SubTitle = "nhìn j",              -- 👈 đổi mô tả phụ
 	TabWidth = 157,
 	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
@@ -44,7 +44,7 @@ local Window = Fluent:CreateWindow({
 -- 📑 Các tab (mục chính)
 local Tabs = {
 	Main0 = Window:AddTab({ Title = "một số kênh🤓" }),  -- 👈 đổi tên tab 1
-	Main1 = Window:AddTab({ Title = "trồng cây🌲" }),  -- 👈 đổi tên tab 2
+	Main1 = Window:AddTab({ Title = "grow a gaden 🌱🌴🌵🌲" }),  -- 👈 đổi tên tab 2
 	Main2 = Window:AddTab({ Title = "bran rót💩" }),     -- 👈 đổi tên tab 3
 	Main3 = Window:AddTab({ Title = "99 đêm🥷" }),        -- 👈 đổi tên tab 4
 	Main4 = Window:AddTab({ Title = "blox fruit🍎" }),    -- 👈 đổi tên tab 5
@@ -93,14 +93,36 @@ Tabs.Main1:AddButton({
 	end
 })
 Tabs.Main3:AddButton({
-	Title = "ngọc bổng",                             -- 👈 tên nút hiển thị
-	Description = "script quá vip",-- 👈 mô tả
+	Title = "cáo mod",                             -- 👈 tên nút hiển thị
+	Description = "script này ok",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
+	end
+})
+Tabs.Main4:AddButton({
+	Title = "đạt thg",                             -- 👈 tên nút hiển thị
+	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
 	Callback = function()
 		local Settings = {
 			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
 			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
 		}
 getgenv().Team = "Marines"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ngocbonggaming/script/refs/heads/main/NgocBongVn.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV3Eng"))()
+	end
+})
+Tabs.Main2:AddButton({
+	Title = "Tên dell bt",                             -- 👈 tên nút hiển thị
+	Description = "script này ngon vãi",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+loadstring(game:HttpGet("https://rawscripts.net/raw/Steal-a Brainrot-Lennon-hub-v5-52358"))()
 	end
 })
