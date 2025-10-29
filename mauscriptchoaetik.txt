@@ -148,3 +148,14 @@ Tabs.Main1:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZusumeHub/ZusumeHub/refs/heads/main/UpdateZysume"))()
 	end
 })
+Tabs.Main4:AddButton({
+	Title = "Script tôi tạo",                             -- 👈 tên nút hiển thị
+	Description = "script này tôi tạo nên ngon vcl",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hahahsjdoroteodch/HoangAnh/refs/heads/main/TBoyRobloxBF.lua.txt"))()
+	end
+})
