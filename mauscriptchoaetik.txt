@@ -32,12 +32,12 @@ repeat wait() until game:IsLoaded()
 
 -- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
-	Title = "Hoàng anh lỏ =}",         -- 👈 đổi thành tên script của bạn
+	Title = "Hoàng anh v2💢💣 =}",         -- 👈 đổi thành tên script của bạn
 	SubTitle = "nhìn j",              -- 👈 đổi mô tả phụ
 	TabWidth = 157,
 	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
-	Theme = "Dark",                   -- 👈 đổi màu chủ đạo: Amethyst, Dark, Aqua, Light,...
+	Theme = "Aqua",                   -- 👈 đổi màu chủ đạo: Amethyst, Dark, Aqua, Light,...
 	MinimizeKey = Enum.KeyCode.End
 })
 
@@ -124,5 +124,27 @@ Tabs.Main2:AddButton({
 			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
 		}
 loadstring(game:HttpGet("https://rawscripts.net/raw/Steal-a Brainrot-Lennon-hub-v5-52358"))()
+	end
+})
+Tabs.Main5:AddButton({
+	Title = "Ko có tên😁",                             -- 👈 tên nút hiển thị
+	Description = "script này như lồn",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+	end
+})
+Tabs.Main1:AddButton({
+	Title = "Spawner pet",                             -- 👈 tên nút hiển thị
+	Description = "script này như cak ",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZusumeHub/ZusumeHub/refs/heads/main/UpdateZysume"))()
 	end
 })
