@@ -92,7 +92,7 @@ Tabs.Main4:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hahahsjdoroteodch/HoangAnh/refs/heads/main/TBoyRobloxBF.lua.txt"))()
 	end
 })
-Tabs.Main4:AddButton({
+Tabs.Main1:AddButton({
 	Title = "điều khiển bóng",                             -- 👈 tên nút hiển thị
 	Description = "script ball",-- 👈 mô tả
 	Callback = function()
