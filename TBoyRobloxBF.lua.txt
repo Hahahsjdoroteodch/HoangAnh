@@ -1,7 +1,7 @@
 -- discord.gg/tboyroblox
 
 
-shared.LoaderTitle = "Follow kênh H.anh nè m";
+shared.LoaderTitle = "Follow kênh g.baolovaizcak";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
