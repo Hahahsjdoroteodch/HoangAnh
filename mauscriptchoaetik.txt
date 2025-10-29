@@ -32,12 +32,12 @@ repeat wait() until game:IsLoaded()
 
 -- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
-	Title = "Hoàng anh v2💢💣 =}",         -- 👈 đổi thành tên script của bạn
-	SubTitle = "nhìn j",              -- 👈 đổi mô tả phụ
+	Title = "Hoàng anh v2💢💣",         -- 👈 đổi thành tên script của bạn
+	SubTitle = "nhìn trò j",              -- 👈 đổi mô tả phụ
 	TabWidth = 157,
 	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
-	Theme = "Aqua",                   -- 👈 đổi màu chủ đạo: Amethyst, Dark, Aqua, Light,...
+	Theme = "Light",                   -- 👈 đổi màu chủ đạo: Amethyst, Dark, Aqua, Light,...
 	MinimizeKey = Enum.KeyCode.End
 })
 
