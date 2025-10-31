@@ -1,13 +1,13 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz hub (beta verion)",
-  SubTitle = "by real_hoanganh",
+  Title = "redz hub",
+  SubTitle = "by real_redz hub",
   SaveFolder = "Redz | redz lib v5.lua"
 })
 
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://78899147319219", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid:// 78899147319219", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(0, 5) },
 })
 
@@ -16,7 +16,7 @@ local Tab = Window:MakeTab({"Discord", "info"})
 Tab:AddDiscordInvite({
     Name = "redz Hub | Community",
     Description = "Join our discord community to receive information about the next update",
-    Logo = "rbxassetid://78899147319219",
+    Logo = "rbxassetid:// 78899147319219",
     Invite = "http://discord.gg/7aR7kNVt4g",
 })
 
