@@ -1,13 +1,13 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Hoàng Anh lõ😁",
-  SubTitle = "by real_hoanganhlo",
+  Title = "redz hub : Blox Fruits",
+  SubTitle = "by real_redzhub",
   SaveFolder = "Redz | redz lib v5.lua"
 })
 
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://83190276951914", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://79345313424403", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(0, 5) },
 })
 
@@ -290,5 +290,12 @@ local Tab7 = Window:MakeTab({"Giao Diện", "user"})
 local Tab8 = Window:MakeTab({"Cửa Hàng", "shoppingCart"})
 
 local Tab9 = Window:MakeTab({"Khác", "settings"})
+Tab9:AddToggle({
+    Name = "⚠️Super fast attack",
+    Description = "Đánh siêu nhanh",
+    Default = false,
+    Callback = function()
 
+    end
+})
 
