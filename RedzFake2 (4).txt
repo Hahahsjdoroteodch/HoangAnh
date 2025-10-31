@@ -1,4 +1,4 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+local redz = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
   Title = "redz hub : Blox Fruits",
@@ -16,7 +16,7 @@ local Tab = Window:MakeTab({"Discord", "info"})
 Tab:AddDiscordInvite({
     Name = "redz Hub | Community",
     Description = "Join our discord community to receive information about the next update",
-    Logo = "rbxassetid://95105936784502",
+    Logo = "rbxassetid://79345313424403",
     Invite = "http://discord.gg/7aR7kNVt4g",
 })
 
@@ -291,6 +291,8 @@ local Tab8 = Window:MakeTab({"Cửa Hàng", "shoppingCart"})
 
 local Tab9 = Window:MakeTab({"Khác", "settings"})
 Tab9:AddToggle({
+local Tab10 = Window:MakeTab({"Câu cá", "fishing"})
+Tab9:AddToggle({
     Name = "⚠️Super fast attack",
     Description = "Đánh siêu nhanh",
     Default = false,
@@ -298,4 +300,34 @@ Tab9:AddToggle({
 
     end
 })
+Tab9:AddToggle({
+    Name = "fast attack",
+    Description = "Tự động đánh",
+    Default = false,
+    Callback = function()
 
+    end
+})
+Tab9:AddToggle({
+    Name = "attack player",
+    Description = "Tự động đánh người chơi",
+    Default = false,
+    Callback = function()
+
+    end
+})
+Tab10:AddToggle({
+    Name = "Auto fishing",
+    Description = "Tự động câu cá",
+    Default = false,
+    Callback = function()
+
+    end
+Tab3:AddToggle({
+    Name = "Save fishing",
+    Description = "lưu chỗ câu cá",
+    Default = false,
+    Callback = function()
+
+    end
+})
