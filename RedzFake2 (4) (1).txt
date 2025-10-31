@@ -1,8 +1,8 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "TBoy Roblox",
-  SubTitle = "by real_tbeo",
+  Title = "Hoàng Anh",
+  SubTitle = "by real_hoanganh",
   SaveFolder = "Redz | redz lib v5.lua"
 })
 
