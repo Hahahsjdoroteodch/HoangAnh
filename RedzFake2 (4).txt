@@ -1,4 +1,4 @@
-local redz = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
   Title = "redz hub : Blox Fruits",
@@ -7,7 +7,7 @@ local Window = redzlib:MakeWindow({
 })
 
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://79345313424403", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://83190276951914", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(0, 5) },
 })
 
@@ -290,17 +290,7 @@ local Tab7 = Window:MakeTab({"Giao Diện", "user"})
 local Tab8 = Window:MakeTab({"Cửa Hàng", "shoppingCart"})
 
 local Tab9 = Window:MakeTab({"Khác", "settings"})
-Tab9:AddToggle({
-local Tab10 = Window:MakeTab({"Câu cá", "fishing"})
-Tab9:AddToggle({
-    Name = "⚠️Super fast attack",
-    Description = "Đánh siêu nhanh",
-    Default = false,
-    Callback = function()
-
-    end
-})
-Tab9:AddToggle({
+Tab3:AddToggle({
     Name = "fast attack",
     Description = "Tự động đánh",
     Default = false,
@@ -308,24 +298,17 @@ Tab9:AddToggle({
 
     end
 })
-Tab9:AddToggle({
-    Name = "attack player",
+Tab3:AddToggle({
+    Name = "fast attack player",
     Description = "Tự động đánh người chơi",
     Default = false,
     Callback = function()
 
     end
 })
-Tab10:AddToggle({
-    Name = "Auto fishing",
-    Description = "Tự động câu cá",
-    Default = false,
-    Callback = function()
-
-    end
 Tab3:AddToggle({
-    Name = "Save fishing",
-    Description = "lưu chỗ câu cá",
+    Name = "⚠️ Super fast attack",
+    Description = "Tự động đánh siêu nhanh nhẹn",
     Default = false,
     Callback = function()
 
