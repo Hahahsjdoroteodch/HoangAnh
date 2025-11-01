@@ -317,7 +317,7 @@ Tab9:AddToggle({
 
     end
 })
-Tab3:AddToggle({
+Tab10:AddToggle({
     Name = "Save fishing",
     Description = "Tự động lưu chỗ câu cá",
     Default = false,
