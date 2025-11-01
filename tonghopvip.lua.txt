@@ -2,15 +2,15 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "H.anh tổng hợp",
-         Animation = "H.anh Roblox hack"
+         Title = "Phong đz :)",
+         Animation = "by real_phongdz"
          },
         Key = {
         KeySystem = true,
         Title = "bản premium nên có key nhé",
         Description = "",
         KeyLink = "ib mình nhé tên nè @nguyenphuocthinh281989",
-        Keys = {"taoyeunhu"},
+        Keys = {"Phongdz"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script...",
