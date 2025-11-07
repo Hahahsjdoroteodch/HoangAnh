@@ -7,13 +7,13 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
          },
         Key = {
         KeySystem = true,
-        Title = "Nhập key vào đi cu",
+        Title = "Đéo có key thì đừng dùng script",
         Description = "",
         KeyLink = "ib mình nhé tên nè @nguyenphuocthinh281989",
         Keys = {"acquyfflaso1"},
         Notifi = {
         Notifications = true,
-        CorrectKey = "Running the Script...",
+        CorrectKey = "Đợi script lên đi ci...",
        Incorrectkey = "The key is incorrect",
        CopyKeyLink = "Copied to Clipboard"
       }
@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=125530048700579",
+       Image = "http://www.roblox.com/asset/?id=84949168523947",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
