@@ -2,7 +2,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "H.anh script",
+         Title = "Hoàng Anh lỏ",
          Animation = "Premium"
          },
         Key = {
@@ -10,7 +10,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
         Title = "bản premium nên có key nhé",
         Description = "",
         KeyLink = "ib mình nhé tên nè @nguyenphuocthinh281989",
-        Keys = {"skibidi"},
+        Keys = {"Jack5cu"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script...",
@@ -371,17 +371,5 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      Name = "aimlock",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
-  end
-  })
-  AddButton(Tab6o, {
-     Name = "banana tao tạo",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Hahahsjdoroteodch/HoangAnh/refs/heads/main/Hnc%20Banana%20Hub.lua%20(2).lua"))()
-  end
-  })
-  AddButton(Tab6o, {
-     Name = "zis v7",
-    Callback = function()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
   end
   })
