@@ -2,15 +2,15 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "Hoàng Anh lỏ",
+         Title = "Hanh tv Roblox",
          Animation = "Premium"
          },
         Key = {
         KeySystem = true,
-        Title = "bản premium nên có key nhé",
+        Title = "Nhập key vào đi cu",
         Description = "",
         KeyLink = "ib mình nhé tên nè @nguyenphuocthinh281989",
-        Keys = {"Jack5cu"},
+        Keys = {"acquyfflaso1"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script...",
@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=86749587185394",
+       Image = "http://www.roblox.com/asset/?id=125530048700579",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
