@@ -1,18 +1,19 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
        local Window = MakeWindow({
          Hub = {
-         Title = "Hanh tv Roblox",
-         Animation = "Premium"
+         Title = "Tổng hợp vip hub",
+         Animation = "by real_hoanganh"
          },
         Key = {
         KeySystem = true,
-        Title = "Đéo có key thì đừng dùng script",
+        Title = "bản premium nên có key nhé",
         Description = "",
         KeyLink = "ib mình nhé tên nè @nguyenphuocthinh281989",
-        Keys = {"acquyfflaso1"},
+        Keys = {"jackbucu"},
         Notifi = {
         Notifications = true,
-        CorrectKey = "Đợi script lên đi ci...",
+        CorrectKey = "Running the Script...",
        Incorrectkey = "The key is incorrect",
        CopyKeyLink = "Copied to Clipboard"
       }
@@ -20,7 +21,7 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao1
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=84949168523947",
+       Image = "http://www.roblox.com/asset/?id=133972953905423",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
