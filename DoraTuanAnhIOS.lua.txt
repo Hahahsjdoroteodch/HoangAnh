@@ -3382,7 +3382,7 @@ end);
 PosY = 25;
 Kill_At = 28;
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/FastAttackLoL/refs/heads/main/FastAttack.lua"))()
-local v52 = v3:Window("Tuấn Anh IOS", "");
+local v52 = v3:Window("H.anh hub", "");
 local v53 = v52:T("Tab Status", "rbxassetid://10734984606");
 local v54 = v52:T("Tab General", "rbxassetid://10723407389");
 local v55 = v52:T("Setting Other", "rbxassetid://10734950309");
