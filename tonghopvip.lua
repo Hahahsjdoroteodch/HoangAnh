@@ -2,15 +2,15 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "Tổng hợp vip hub",
-         Animation = "by real_hoanganh"
+         Title = "Mẹ mày bé :)",
+         Animation = "Mẹo mày bé"
          },
         Key = {
         KeySystem = true,
         Title = "bản premium nên có key nhé",
         Description = "",
         KeyLink = "ib mình nhé tên nè @nguyenphuocthinh281989",
-        Keys = {"jackbucu"},
+        Keys = {"nguyenyeukimcuong"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script...",
@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=133972953905423",
+       Image = "http://www.roblox.com/asset/?id=86749587185394",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
