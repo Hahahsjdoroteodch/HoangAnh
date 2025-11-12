@@ -506,7 +506,7 @@ local Window = WindUI:CreateWindow({
 })
 
 Window:EditOpenButton({
-    Title = "Open Menu Monster Hub!",
+    Title = "Cặc dùng đi thằng em!",
     Icon = "monitor",
     CornerRadius = UDim.new(0, 6),
     StrokeThickness = 2,
