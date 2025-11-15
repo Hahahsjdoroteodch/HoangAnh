@@ -13,7 +13,7 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Nông Trại", "home"})
+local TabFarm = Window:MakeTab({"Fram", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -36,7 +36,7 @@ local TabShop = Window:MakeTab({"Cửa hàng", "shoppingCart"})
 local TabSettings = Window:MakeTab({"Cài Đặt", "settings"})
 
 TabDiscord:AddDiscordInvite({
-    Name = "Redz Mod | Community",
+    Name = "Redz hub | Community",
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
     Invite = "https://discord.gg/b7eNFdXPP",
