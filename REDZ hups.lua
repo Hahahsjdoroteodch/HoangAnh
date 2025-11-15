@@ -1,8 +1,9 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Redz Hub [Mod] : Blox Fruits",
-  SubTitle = "By NguyenHoangTrong",
-  SaveFolder = "Redz Mod.lua"
+  Title = "redz hub : Blox Fruits",
+  SubTitle = "by real_redzfake",
+  SaveFolder = "Redz Fake.lua"
 })
 
 Window:AddMinimizeButton({
@@ -12,9 +13,9 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Nông Trại", "home"})
+local TabFarm = Window:MakeTab({"Fram/lv", "home"})
 
-local TabSea = Window:MakeTab({"Biển", "waves"})
+local TabSea = Window:MakeTab({"Biển/sea", "waves"})
 
 local TabFish = Window:MakeTab({"Câu Cá", "fish"})
 
@@ -35,10 +36,10 @@ local TabShop = Window:MakeTab({"Cửa hàng", "shoppingCart"})
 local TabSettings = Window:MakeTab({"Cài Đặt", "settings"})
 
 TabDiscord:AddDiscordInvite({
-    Name = "Redz Mod | Community",
+    Name = "Redz hub | Community",
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
-    Invite = "https://discord.gg/b7eNFdXPP",
+    Invite = "https://discord.gg/7AkeHktEDe",
 })
 
 
@@ -711,9 +712,9 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"Quest", "Normal", "Nearest"}
+local ModeList = {"Nhận nhiệm vụ", "bình thường", "đánh quái gần"}
 TabFarm:AddDropdown({
-	Name = "Chọn Chế Độ",
+	Name = "Chọn 1 chế độ",
 	Options = ModeList,
 	Default = _G.FarmMode,
 	Callback = function(Value)
@@ -870,7 +871,7 @@ end)
 -- 🧠 AUTO FARM CHÍNH
 ------------------------------------------------
 TabFarm:AddToggle({
-	Name = "Tự Động Cày Cấp",
+	Name = "Tự Động cày level",
 	Default = false,
 	Callback = function(v)
 		_G.AutoFarm = v
@@ -962,7 +963,7 @@ end)
 ------------------------------------------------
 do
 TabFarm:AddToggle({
-    Name = "Đánh Nhà Máy",
+    Name = "Đánh nhà máy sea2",
     Default = false,
     Callback = function(Value)
         _G.Factory = Value
@@ -3712,8 +3713,8 @@ local AllCodes = {
 
 -- 🧩 Dropdown chọn code
 TabSettings:AddDropdown({
-    Name = "Chọn Mã",
-    Options = AllCodes,
+    Name = "Chọn Mã đi",
+    Options = Nhập hết code,
     Default = nil,
     MultiSelect = false,
     Callback = function(value)
