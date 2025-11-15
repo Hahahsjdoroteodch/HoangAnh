@@ -1,9 +1,8 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz Hub : Blox Fruits",
-  SubTitle = "by real_redz",
-  SaveFolder = "Redz real.lua"
+  Title = "Redz Hub [Mod] : Blox Fruits",
+  SubTitle = "By NguyenHoangTrong",
+  SaveFolder = "Redz Mod.lua"
 })
 
 Window:AddMinimizeButton({
@@ -13,7 +12,7 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Fram", "home"})
+local TabFarm = Window:MakeTab({"Nông Trại", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -36,7 +35,7 @@ local TabShop = Window:MakeTab({"Cửa hàng", "shoppingCart"})
 local TabSettings = Window:MakeTab({"Cài Đặt", "settings"})
 
 TabDiscord:AddDiscordInvite({
-    Name = "Redz hub | Community",
+    Name = "Redz Mod | Community",
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
     Invite = "https://discord.gg/b7eNFdXPP",
