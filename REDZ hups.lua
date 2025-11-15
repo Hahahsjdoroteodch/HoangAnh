@@ -1,9 +1,9 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz hub : Blox Fruits",
-  SubTitle = "by real_redzfake",
-  SaveFolder = "Redz Fake.lua"
+  Title = "redz hub BETA ACEESS",
+  SubTitle = "by real_smoke",
+  SaveFolder = "Redz real.lua"
 })
 
 Window:AddMinimizeButton({
@@ -13,9 +13,9 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Fram/lv", "home"})
+local TabFarm = Window:MakeTab({"Fram", "home"})
 
-local TabSea = Window:MakeTab({"Biển/sea", "waves"})
+local TabSea = Window:MakeTab({"Biển", "waves"})
 
 local TabFish = Window:MakeTab({"Câu Cá", "fish"})
 
@@ -40,7 +40,6 @@ TabDiscord:AddDiscordInvite({
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
     Invite = "https://discord.gg/7AkeHktEDe",
-})
 
 
 -- Phần TabFarm
@@ -712,9 +711,9 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"Nhận nhiệm vụ", "bình thường", "đánh quái gần"}
+local ModeList = {"Quest", "Normal", "Nearest"}
 TabFarm:AddDropdown({
-	Name = "Chọn 1 chế độ",
+	Name = "Chọn Chế Độ",
 	Options = ModeList,
 	Default = _G.FarmMode,
 	Callback = function(Value)
@@ -871,7 +870,7 @@ end)
 -- 🧠 AUTO FARM CHÍNH
 ------------------------------------------------
 TabFarm:AddToggle({
-	Name = "Tự Động cày level",
+	Name = "Tự Động Cày Cấp",
 	Default = false,
 	Callback = function(v)
 		_G.AutoFarm = v
@@ -963,7 +962,7 @@ end)
 ------------------------------------------------
 do
 TabFarm:AddToggle({
-    Name = "Đánh nhà máy sea2",
+    Name = "Đánh Nhà Máy",
     Default = false,
     Callback = function(Value)
         _G.Factory = Value
@@ -3713,8 +3712,8 @@ local AllCodes = {
 
 -- 🧩 Dropdown chọn code
 TabSettings:AddDropdown({
-    Name = "Chọn Mã đi",
-    Options = Nhập hết code,
+    Name = "Chọn Mã",
+    Options = AllCodes,
     Default = nil,
     MultiSelect = false,
     Callback = function(value)
