@@ -1,8 +1,8 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz hub : [BETA ACCESS]",
-  SubTitle = "by real_redzfake",
+  Title = "redz hub : Blox Fruits",
+  SubTitle = "by real_redz",
   SaveFolder = "Redz Mod.lua"
 })
 
@@ -13,7 +13,7 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Fram/lv", "home"})
+local TabFarm = Window:MakeTab({"Fram", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -685,7 +685,7 @@ end;
 ------------------------------------------------
 -- ⚔️ VŨ KHÍ
 ------------------------------------------------
-local WeaponList = {"Melee", "Sword", "Fruit",}
+local WeaponList = {"Melee", "Sword", "Fruit", "Gun"}
 _G.SelectWeapon = _G.SelectWeapon or "Melee"
 
 TabFarm:AddDropdown({
