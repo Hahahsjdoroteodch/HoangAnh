@@ -1,9 +1,9 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz hub BETA ACEESS",
-  SubTitle = "by real_smoke",
-  SaveFolder = "Redz real.lua"
+  Title = "redz hub : [BETA ACCESS]",
+  SubTitle = "by real_redzfake",
+  SaveFolder = "Redz Mod.lua"
 })
 
 Window:AddMinimizeButton({
@@ -13,7 +13,7 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Fram", "home"})
+local TabFarm = Window:MakeTab({"Fram/lv", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -36,10 +36,11 @@ local TabShop = Window:MakeTab({"Cửa hàng", "shoppingCart"})
 local TabSettings = Window:MakeTab({"Cài Đặt", "settings"})
 
 TabDiscord:AddDiscordInvite({
-    Name = "Redz hub | Community",
+    Name = "Redz Mod | Community",
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
-    Invite = "https://discord.gg/7AkeHktEDe",
+    Invite = "https://discord.gg/b7eNFdXPP",
+})
 
 
 -- Phần TabFarm
@@ -684,7 +685,7 @@ end;
 ------------------------------------------------
 -- ⚔️ VŨ KHÍ
 ------------------------------------------------
-local WeaponList = {"Melee", "Sword", "Fruit", "Gun"}
+local WeaponList = {"Melee", "Sword", "Fruit",}
 _G.SelectWeapon = _G.SelectWeapon or "Melee"
 
 TabFarm:AddDropdown({
