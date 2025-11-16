@@ -2,7 +2,7 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-g
 
 local Window = redzlib:MakeWindow({
   Title = "redz hub : Blox Fruits",
-  SubTitle = "by real_redz",
+  SubTitle = "by redzfake",
   SaveFolder = "Redz Mod.lua"
 })
 
@@ -13,11 +13,11 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Nông Trại", "home"})
+local TabFarm = Window:MakeTab({"Fram", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
-local TabFish = Window:MakeTab({"Câu Cá", "fish"})
+local TabFish = Window:MakeTab({"Auto fishing", "fish"})
 
 local TabItem = Window:MakeTab({"Vật Phẩm", "swords"})
 
@@ -871,7 +871,7 @@ end)
 -- 🧠 AUTO FARM CHÍNH
 ------------------------------------------------
 TabFarm:AddToggle({
-	Name = "Tự Động Cày Cấp",
+	Name = "Tự Động Lên Cấp",
 	Default = false,
 	Callback = function(v)
 		_G.AutoFarm = v
@@ -963,7 +963,7 @@ end)
 ------------------------------------------------
 do
 TabFarm:AddToggle({
-    Name = "Đánh Nhà Máy",
+    Name = "Ko Hoạt Động",
     Default = false,
     Callback = function(Value)
         _G.Factory = Value
@@ -1111,7 +1111,7 @@ local Section = TabItem:AddSection({"Tộc"})
 
 -- 🧩 TOGGLE
 TabItem:AddToggle({
-    Name = "Tự Lấy Tộc Máy",
+    Name = "Tự Lấy Tộc Cyborg",
     Default = false,
     Callback = function(Value)
         -- Chưa có chức năng
@@ -3422,7 +3422,7 @@ TabSettings:AddToggle({
 
 -- 🧩 Fast Attack Toggle
 TabSettings:AddToggle({
-    Name = "Đánh Cực Nhanh",
+    Name = "Đánh Cực Gắc",
     Default = true,
     Callback = function(Value)
         _G.FastAttack = Value
@@ -3878,7 +3878,7 @@ end)
 
 -- 🧩 TOGGLE DẠNG WINDUI CHUẨN
 TabSettings:AddToggle({
-	Name = "Aimbot Skill",
+	Name = "Aimbot",
 	Default = false,
 	Callback = function(Value)
 		AimBotEnabled = Value
