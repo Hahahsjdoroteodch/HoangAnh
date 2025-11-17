@@ -446,7 +446,7 @@ if not _env.LoadedFarm then
 end
 
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/V5/Source.lua"))()
-local Window = redzlib:MakeWindow({  = "Anh hub : Meme Sea", SubTitle = "Anhnohack", SaveFolder = "redzHub-MemeSea.json" })
+local Window = redzlib:MakeWindow({ Title = "redz Hub [Mod] : Meme Sea", SubTitle = "by redzfake", SaveFolder = "redzHub-MemeSea.json" })
 Window:AddMinimizeButton({
   Button = { Image = "rbxassetid://15298567397", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
@@ -455,7 +455,7 @@ Window:AddMinimizeButton({
 local Tabs = {
   Discord = Window:MakeTab({"Discord", "Info"}),
   MainFarm = Window:MakeTab({"Farm", "Home"}),
-  Items = Window:MakeTab({"Items", "Swords"}),
+  Items = Window:MakeTab({"Items", "Gun"}),
   Stats = Window:MakeTab({"Stats", "Signal"}),
   Teleport = Window:MakeTab({"Teleport", "Locate"}),
   Shop = Window:MakeTab({"Shop", "ShoppingCart"}),
