@@ -1,8 +1,8 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz hub : Blox Fruits",
-  SubTitle = "by redzfake",
+  Title = "redz Hub : Blox Fruits",
+  SubTitle = "by real_redz",
   SaveFolder = "Redz Mod.lua"
 })
 
@@ -17,7 +17,7 @@ local TabFarm = Window:MakeTab({"Fram", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
-local TabFish = Window:MakeTab({"Auto fishing", "fish"})
+local TabFish = Window:MakeTab({"Câu Cá", "fish"})
 
 local TabItem = Window:MakeTab({"Vật Phẩm", "swords"})
 
@@ -712,9 +712,9 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"Quest", "Normal", "Nearest"}
+local ModeList = {"Normal Attack", "Fast Attack", "Super Fast Attack"}
 TabFarm:AddDropdown({
-	Name = "Chọn Chế Độ",
+	Name = "Chọn Tốc Độ Đánh",
 	Options = ModeList,
 	Default = _G.FarmMode,
 	Callback = function(Value)
@@ -871,7 +871,7 @@ end)
 -- 🧠 AUTO FARM CHÍNH
 ------------------------------------------------
 TabFarm:AddToggle({
-	Name = "Tự Động Lên Cấp",
+	Name = "Tự Động Cày Cấp",
 	Default = false,
 	Callback = function(v)
 		_G.AutoFarm = v
@@ -963,7 +963,7 @@ end)
 ------------------------------------------------
 do
 TabFarm:AddToggle({
-    Name = "Ko Hoạt Động",
+    Name = "Đánh Nhà Máy",
     Default = false,
     Callback = function(Value)
         _G.Factory = Value
@@ -1111,7 +1111,7 @@ local Section = TabItem:AddSection({"Tộc"})
 
 -- 🧩 TOGGLE
 TabItem:AddToggle({
-    Name = "Tự Lấy Tộc Cyborg",
+    Name = "Tự Lấy Tộc Máy",
     Default = false,
     Callback = function(Value)
         -- Chưa có chức năng
@@ -3422,7 +3422,7 @@ TabSettings:AddToggle({
 
 -- 🧩 Fast Attack Toggle
 TabSettings:AddToggle({
-    Name = "Đánh Cực Gắc",
+    Name = "Đánh Cực Nhanh",
     Default = true,
     Callback = function(Value)
         _G.FastAttack = Value
@@ -3878,7 +3878,7 @@ end)
 
 -- 🧩 TOGGLE DẠNG WINDUI CHUẨN
 TabSettings:AddToggle({
-	Name = "Aimbot",
+	Name = "Aimbot Skill",
 	Default = false,
 	Callback = function(Value)
 		AimBotEnabled = Value
