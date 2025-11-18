@@ -1,8 +1,8 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz Hub : Blox Fruits",
-  SubTitle = "by real_redz",
+  Title = "Redz Hub [Mod] : Blox Fruits",
+  SubTitle = "By NguyenHoangTrong",
   SaveFolder = "Redz Mod.lua"
 })
 
@@ -13,7 +13,7 @@ Window:AddMinimizeButton({
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Fram", "home"})
+local TabFarm = Window:MakeTab({"Nông Trại", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -712,9 +712,9 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"Normal Attack", "Fast Attack", "Super Fast Attack"}
+local ModeList = {"Quest", "Normal", "Nearest"}
 TabFarm:AddDropdown({
-	Name = "Chọn Tốc Độ Đánh",
+	Name = "Chọn Chế Độ",
 	Options = ModeList,
 	Default = _G.FarmMode,
 	Callback = function(Value)
