@@ -1,13 +1,13 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Redz Hub [Mod] : Blox Fruits",
-  SubTitle = "By NguyenHoangTrong",
+  Title = "redz hub : Fake",
+  SubTitle = "by redzfake",
   SaveFolder = "Redz Mod.lua"
 })
 
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://87245917237197", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://86434040336005", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(0, 5) },
 })
 
