@@ -1962,7 +1962,7 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     New = Window:AddTab({
         Title = "New Events",
-        Icon = "Home"
+        Icon = "home"
     }),
     Settings = Window:AddTab({
         Title = "Setiing",
