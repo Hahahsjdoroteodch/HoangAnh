@@ -1,19 +1,19 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "redz hub : Fake",
-  SubTitle = "by redzfake",
+  Title = "HoangAnh hub",
+  SubTitle = "By hoanganhhub",
   SaveFolder = "Redz Mod.lua"
 })
 
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://86434040336005", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://10260193230", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(0, 5) },
 })
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Nông Trại", "home"})
+local TabFarm = Window:MakeTab({"Farm", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -39,7 +39,7 @@ TabDiscord:AddDiscordInvite({
     Name = "Redz Mod | Community",
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
-    Invite = "https://discord.gg/b7eNFdXPP",
+    Invite = "https://discord.gg/b9QX2NBj",
 })
 
 
@@ -712,9 +712,9 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"Quest", "Normal", "Nearest"}
+local ModeList = {"Fast Attack", "Super Fast Attack", "Anh Attack"}
 TabFarm:AddDropdown({
-	Name = "Chọn Chế Độ",
+	Name = "Chọn Tốc Độ",
 	Options = ModeList,
 	Default = _G.FarmMode,
 	Callback = function(Value)
