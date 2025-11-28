@@ -712,7 +712,7 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"Fast Attack", "Super Fast Attack", "Anh Attack"}
+local ModeList = {"FastAttack", "SuperFastAttack", "HoanganhAttack"}
 TabFarm:AddDropdown({
 	Name = "Chọn Tốc Độ",
 	Options = ModeList,
