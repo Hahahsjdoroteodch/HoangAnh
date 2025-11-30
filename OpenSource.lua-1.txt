@@ -446,20 +446,20 @@ if not _env.LoadedFarm then
 end
 
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/V5/Source.lua"))()
-local Window = redzlib:MakeWindow({ Title = "redz Hub [Mod] : Meme Sea", SubTitle = "by redzfake", SaveFolder = "redzHub-MemeSea.json" })
+local Window = redzlib:MakeWindow({ Title = "redz Hub | HoangAnh : Meme sea", SubTitle = "by hoanganh", SaveFolder = "redzHub-MemeSea.json" })
 Window:AddMinimizeButton({
-  Button = { Image = "rbxassetid://15298567397", BackgroundTransparency = 0 },
+  Button = { Image = "rbxassetid://115050058236918", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
 })
 
 local Tabs = {
   Discord = Window:MakeTab({"Discord", "Info"}),
-  MainFarm = Window:MakeTab({"Farm", "Home"}),
-  Items = Window:MakeTab({"Items", "Gun"}),
-  Stats = Window:MakeTab({"Stats", "Signal"}),
-  Teleport = Window:MakeTab({"Teleport", "Locate"}),
-  Shop = Window:MakeTab({"Shop", "ShoppingCart"}),
-  Misc = Window:MakeTab({"Misc", "Settings"})
+  MainFarm = Window:MakeTab({"Fram", "Home"}),
+  Items = Window:MakeTab({"Vật Phẩm/Đồ", "Swords"}),
+  Stats = Window:MakeTab({"Cộng Chỉ Số", "Signal"}),
+  Teleport = Window:MakeTab({"Dịch Chuyển", "Locate"}),
+  Shop = Window:MakeTab({"Cửa Hàng", "ShoppingCart"}),
+  Misc = Window:MakeTab({"Cài Đặt", "Settings"})
 }
 
 Window:SelectTab(Tabs.MainFarm)
