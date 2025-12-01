@@ -446,9 +446,9 @@ if not _env.LoadedFarm then
 end
 
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/V5/Source.lua"))()
-local Window = redzlib:MakeWindow({ Title = "redz Hub | Cu nguyên đích bự dú dài : Meme sea", SubTitle = "by nguyencaklon", SaveFolder = "redzHub-MemeSea.json" })
+local Window = redzlib:MakeWindow({ Title = "redz Hub | TEST : Meme sea", SubTitle = "by redz1234", SaveFolder = "redzHub-MemeSea.json" })
 Window:AddMinimizeButton({
-  Button = { Image = "rbxassetid://15298567397", BackgroundTransparency = 0 },
+  Button = { Image = "rbxassetid://115050058236918", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
 })
 
@@ -459,7 +459,8 @@ local Tabs = {
   Stats = Window:MakeTab({"Stats", "Signal"}),
   Teleport = Window:MakeTab({"Dịch Chuyển", "Locate"}),
   Shop = Window:MakeTab({"Cửa Hàng", "ShoppingCart"}),
-  Misc = Window:MakeTab({"Cài Đặt", "Settings"})
+  Misc = Window:MakeTab({"Cài Đặt", "Settings"}),
+  MainFram = Window:MakeTab({"Bí mật", "Info"})
 }
 
 Window:SelectTab(Tabs.MainFarm)
