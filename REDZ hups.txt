@@ -1,19 +1,19 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/New-Gui/refs/heads/main/New-Redz.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "HoangAnh hub",
-  SubTitle = "By hoanganhhub",
+  Title = "redz Hub : Blox Fruits",
+  SubTitle = "by real_redz",
   SaveFolder = "Redz Mod.lua"
 })
 
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://10260193230", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://15298567397", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(0, 5) },
 })
 
 local TabDiscord = Window:MakeTab({"Discord", "info"})
 
-local TabFarm = Window:MakeTab({"Farm", "home"})
+local TabFarm = Window:MakeTab({"Nông Trại", "home"})
 
 local TabSea = Window:MakeTab({"Biển", "waves"})
 
@@ -34,12 +34,13 @@ local TabVisual = Window:MakeTab({"Giao Diện", "user"})
 local TabShop = Window:MakeTab({"Cửa hàng", "shoppingCart"})
 
 local TabSettings = Window:MakeTab({"Cài Đặt", "settings"})
+local TabFraming = Window:MakeTab({"Bí ẩn",
 
 TabDiscord:AddDiscordInvite({
     Name = "Redz Mod | Community",
     Description = "Tham gia nhóm discord để nhận thông báo update mới",
     Logo = "rbxassetid://87245917237197",
-    Invite = "https://discord.gg/b9QX2NBj",
+    Invite = "https://discord.gg/b7eNFdXPP",
 })
 
 
@@ -712,9 +713,9 @@ end)
 ------------------------------------------------
 -- 🌈 MODE FARM
 ------------------------------------------------
-local ModeList = {"FastAttack", "SuperFastAttack", "HoanganhAttack"}
+local ModeList = {"Quest", "Normal", "Nearest"}
 TabFarm:AddDropdown({
-	Name = "Chọn Tốc Độ",
+	Name = "Chọn Chế Độ",
 	Options = ModeList,
 	Default = _G.FarmMode,
 	Callback = function(Value)
@@ -3888,3 +3889,77 @@ TabSettings:AddToggle({
 })
 
 
+-- 🧩 TOGGLE SUPER FAST ATTACK
+TabFraming:AddDropdown({
+    Name = "⚠️Super fast Attack",
+    Default = false,
+    Callback = function(Value)
+        -- Chưa có chức năng
+    end
+})
+
+-- ⚙️ TAB FRAMING - REDEEM CODE SYSTEM
+
+local AllCodes = {
+    "KITTGAMING",
+    "ENYU_IS_PRO",
+    "FUDD10",
+    "BIGNEWS",
+    "THEGREATACE",
+    "SUB2GAMERROBOT_EXP1",
+    "STRAWHATMAIME",
+    "SUB2OFFICIALNOOBIE",
+    "SUB2NOOBMASTER123",
+    "SUB2DAIGROCK",
+    "AXIORE",
+    "TANTAIGAMIMG",
+    "STRAWHATMAINE",
+    "JCWK",
+    "FUDD10_V2",
+    "SUB2FER999",
+    "MAGICBIS",
+    "TY_FOR_WATCHING",
+    "STARCODEHEO",
+    "NOOB_REFUND",
+    "SUB2GAMERROBOT_RESET1",
+    "Sub2UncleKizaru"
+    "ZIOLES"
+}
+
+-- 🧩 Dropdown chọn code
+TabFraming:AddDropdown({
+    Name = "Chọn Bất Kì",
+    Options = AllCodes,
+    Default = nil,
+    MultiSelect = false,
+    Callback = function(value)
+        _G.CodeSelect = value
+    end
+})
+
+-- 🧩 Nút redeem code đang chọn
+TabFraming:AddButton({
+    Name = "Sử Dụng Mã",
+    Callback = function()
+        if _G.CodeSelect then
+            game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(_G.CodeSelect)
+        else 
+            warn("⚠️ Bạn chưa chọn code nào!")
+        end
+    end
+})
+
+-- 🧩 Nút redeem tất cả code
+TabSettings:AddButton({
+    Name = "Dùng Tất Cả Mã",
+    Callback = function()
+        local Redeem = function(code)
+            game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(code)
+            task.wait(0.25) -- tránh spam quá nhanh
+        end
+
+        for _, code in pairs(AllCodes) do
+            Redeem(code)
+        end
+    end
+})
